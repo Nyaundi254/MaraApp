@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "461734137945",
+    "firebase_url": "https://mara-54c3f.firebaseio.com",
+    "project_id": "mara-54c3f",
+    "storage_bucket": "mara-54c3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461734137945:android:be3c07b6eef1d462046148",
+        "android_client_info": {
+          "package_name": "com.rabitech.mara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461734137945-rmqqnvvp1a686n9cied0o11tjt67mds6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rabitech.mara",
+            "certificate_hash": "b14fe19adb0592e969935c7fab2c8cce599ce4ff"
+          }
+        },
+        {
+          "client_id": "461734137945-q4vacvs7j9kiheu1blme8eaptn8s09om.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZEvbv6HpovruJUjfyTf9I6vzrQzw36CA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461734137945-q4vacvs7j9kiheu1blme8eaptn8s09om.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

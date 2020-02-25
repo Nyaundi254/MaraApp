@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mara</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="harvest_request">Harvest Request</string>
+    <string name="payment_details">Account Details</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="user_profile">Profile</string>
+
+</resources>

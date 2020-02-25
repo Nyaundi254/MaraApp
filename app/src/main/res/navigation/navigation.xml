@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.rabitech.mara.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_harvestRequest"
+            app:destination="@id/harvestRequest" />
+        <action
+            android:id="@+id/action_homeFragment_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_homeFragment_to_paymentStatus"
+            app:destination="@id/paymentStatus" />
+        <action
+            android:id="@+id/action_homeFragment_to_bankAccountFragment"
+            app:destination="@id/bankAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/harvestRequest"
+        android:name="com.rabitech.mara.HarvestRequest"
+        android:label="Harvest Request"
+        tools:layout="@layout/fragment_harvest_request">
+        <action
+            android:id="@+id/action_harvestRequest_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@+id/homeFragment" />
+        <action
+            android:id="@+id/action_harvestRequest_to_harvest"
+            app:destination="@id/harvest" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.rabitech.mara.Profile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@+id/homeFragment" />
+        <action
+            android:id="@+id/action_profile_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankAccountFragment"
+        android:name="com.rabitech.mara.BankAccountFragment"
+        android:label="Bank Account"
+        tools:layout="@layout/fragment_bank_account" />
+    <fragment
+        android:id="@+id/paymentStatus"
+        android:name="com.rabitech.mara.PaymentStatus"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment_status" />
+    <fragment
+        android:id="@+id/harvest"
+        android:name="com.rabitech.mara.Harvest"
+        android:label="Harvest" />
+    <fragment
+        android:id="@+id/login"
+        android:name="com.rabitech.mara.Login"
+        android:label="Login" />
+</navigation>
