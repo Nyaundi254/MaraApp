@@ -13,4 +13,6 @@
     <color name="colorDarkPurple">#8e24aa</color>
     <color name="colorlight">#ff80ab</color>
     <color name="red">#ff6d00</color>
+    <color name="yellow">#FFF59D</color>
+    <color name="bluelight">#B2EBF2</color>
 </resources>

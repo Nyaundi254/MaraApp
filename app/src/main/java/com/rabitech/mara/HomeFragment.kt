@@ -34,7 +34,7 @@ class HomeFragment : Fragment() {
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_paymentStatus)
         )
         binding.homeCard4.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_profile_to_login)
+            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_login)
         )
         return binding.root
     }

@@ -21,6 +21,9 @@
         <action
             android:id="@+id/action_homeFragment_to_bankAccountFragment"
             app:destination="@id/bankAccountFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_login"
+            app:destination="@id/login" />
     </fragment>
     <fragment
         android:id="@+id/harvestRequest"
@@ -44,9 +47,6 @@
             android:id="@+id/action_profile_to_homeFragment"
             app:destination="@id/homeFragment"
             app:popUpTo="@+id/homeFragment" />
-        <action
-            android:id="@+id/action_profile_to_login"
-            app:destination="@id/login" />
     </fragment>
     <fragment
         android:id="@+id/bankAccountFragment"
