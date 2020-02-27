@@ -50,13 +50,11 @@ class MainActivity : AppCompatActivity() {
     private fun setupDrawer() {
         drawerlayout = binding.drawerLayout
         val toolbar = findViewById<Toolbar>(R.id.toolbar_main)
-        val appBarConfiguration = AppBarConfiguration(navController.graph, drawerlayout)
+        val appBarConfiguration = AppBarConfiguration(setOf(R.id.homeFragment), drawerlayout)
 
         toolbar.setupWithNavController(navController,appBarConfiguration)
         findViewById<NavigationView>(R.id.nav_view)
             .setupWithNavController(navController)
-
-        //setupActionBarWithNavController(navController, appBarConfiguration)
 
     }
 
