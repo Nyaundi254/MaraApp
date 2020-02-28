@@ -29,18 +29,21 @@ class MainActivity : AppCompatActivity() {
         setupDrawer()
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            if(destination.id == R.id.login){
-                binding
-                    .apply {
+
+            when(destination.id ) {
+                R.id.login -> {
+                    binding.apply {
                         toolbarMain.visibility = View.GONE
                         navView.visibility = View.GONE
                     }
-            }else{
-                binding
-                    .apply {
+                }
+                else -> {
+                    binding.apply {
                         toolbarMain.visibility = View.VISIBLE
                         navView.visibility = View.VISIBLE
+
                     }
+                }
             }
         }
 
@@ -51,6 +54,7 @@ class MainActivity : AppCompatActivity() {
         drawerlayout = binding.drawerLayout
         val toolbar = findViewById<Toolbar>(R.id.toolbar_main)
         val appBarConfiguration = AppBarConfiguration(setOf(R.id.homeFragment), drawerlayout)
+
 
         toolbar.setupWithNavController(navController,appBarConfiguration)
         findViewById<NavigationView>(R.id.nav_view)
